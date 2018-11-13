@@ -1,0 +1,230 @@
+/*
+ *
+ * Responsive Basics
+ * 
+ */
+
+a,
+button {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+/*
+ *
+ * General
+ *
+ */
+
+.body-main {
+  padding: 2vw;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+/* I used a new approach by using "vw" units
+   Tested it across several dsiplays from
+   developer tools and it seems fine */
+
+.header-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-logo {
+  width: 20%;
+}
+
+.header-img {
+  width: 11vw;
+}
+
+.header-title {
+  width: 80%;
+  text-align: right;
+}
+
+.header-text {
+  font-size: 6vw;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.header-subtitle {
+  font-size: 3vw;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.header-line {
+  width: 100%;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+.section-title {
+  font-size: 20px;
+  /* The below is to align the section jump to bottom right
+     Float right alone resulted in the section jump link being
+     aligned to the top which I didn't want */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  /* Results in flex boxes being aligned to bottom */
+  justify-content: space-between;
+  /* Results in the section jump being aligned to the right */
+}
+
+.section-jump {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+/*
+ *
+ * Story
+ *
+ */
+
+.story-chapter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chapter-img,
+.chapter-content {
+  width: 100%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chapter-img {
+  max-width: 400px;
+  padding: 10px;
+}
+
+.chapter-title {
+  font-size: 16px;
+}
+
+.chapter-text {
+  font-size: 14px;
+}
+
+/*
+ *
+ * Portfolio
+ *
+ */
+
+.portfolio-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio-proj {
+  width: 200px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Enhance readibality by aligning all projects vertically
+   by setting fixed height for images and text */
+.proj-img {
+  overflow: hidden;
+  height: 150px;
+}
+
+.proj-text {
+  height: 85px;
+}
+
+/* Cneter image */
+.proj-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proj-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.proj-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+/*
+ *
+ * Social
+ *
+ */
+
+.social-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-site {
+  display: inline-block;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-img {
+  width: 50px;
+}
+
+.social-link {
+  display: none;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+.header-line {
+  width: 100%;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.footer-main {
+  font-size: 10px;
+  text-align: center;
+}

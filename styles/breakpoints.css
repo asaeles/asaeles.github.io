@@ -1,0 +1,91 @@
+@media screen and (min-width: 401px) {
+
+  /* Limit social icons to 4 per row */
+  .social-site {
+    width: 24%;
+  }
+}
+
+@media screen and (min-width: 501px) {
+
+  /* Increase text size in some places */
+  .section-title {
+    font-size: 25px;
+  }
+
+  .section-jump {
+    font-size: 20px;
+  }
+
+  .chapter-title {
+    font-size: 20px;
+  }
+
+  .footer-main {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 701px) {
+
+  /* Increase text size in some places */
+  .section-title {
+    font-size: 30px;
+  }
+
+  .section-jump {
+    font-size: 23px;
+  }
+
+  .footer-main {
+    font-size: 15px;
+  }
+
+  /* Change layout of story to be image on left
+     or right of text */
+  .img-left {
+    width: 40%;
+    order: 0;
+  }
+
+  .chapter-content {
+    width: 60%;
+    order: 1;
+  }
+
+  .img-right {
+    width: 40%;
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 771px) {
+
+  /* Change layout of social icons to be
+     two columns and with full link text */
+  .social-site {
+    width: 49%;
+  }
+
+  .social-link {
+    display: initial;
+  }
+
+}
+
+@media screen and (min-width: 801px) {
+
+  /* Increase text size in some places */
+  .chapter-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+
+  /* Stop content wdth at 900 pixels leaving
+     the header and footer to expand */
+  .container {
+    width: 900px;
+  }
+}
